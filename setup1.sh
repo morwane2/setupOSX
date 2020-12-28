@@ -65,10 +65,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 
 echo_warn "Installing Estonian language support..."
-cd ~/Library/Spelling
+cd $HOME/Library/Spelling
 wget http://www.meso.ee/~jjpp/speller/et_EE.dic
 wget http://www.meso.ee/~jjpp/speller/et_EE.aff
-cd
+cd $HOME
 
 echo_warn "Configuring OSX..."
 
