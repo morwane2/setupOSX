@@ -54,11 +54,6 @@ brew install devonthink
 brew install google-chrome
 brew install setapp
 
-
-echo_warn "Installing Oh My Zsh..."
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-
 echo_warn "Installing Estonian language support..."
 cd $HOME/Library/Spelling
 wget http://www.meso.ee/~jjpp/speller/et_EE.dic
@@ -72,6 +67,10 @@ defaults write NSGlobalDomain KeyRepeat -int 0
 
 # Show filename extensions by default
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+
+echo_warn "Installing Oh My Zsh..."
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 
 echo_ok "Bootstrapping complete"
