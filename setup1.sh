@@ -40,24 +40,19 @@ brew install ${PACKAGES[@]}
 echo_ok "Cleaning up..."
 brew cleanup
 
-CASKS=(
-    1password
-    alfred
-    devonthink
-    dropbox
-    evernote
-    google-chrome
-    hazel
-    hook
-    karabiner-elements
-    keyboard-maestro
-    nextcloud
-    setapp
-    textexpander
-    )
-
 echo_warn "Installing cask apps..."
-brew install --cask ${CASKS[@]}
+brew install 1password
+brew install dropbox
+brew install evernote
+brew install nextcloud
+brew install alfred
+brew install karabiner-elements
+brew install keyboard-maestro
+brew install textexpander
+brew install hazel
+brew install devonthink
+brew install google-chrome
+brew install setapp
 
 
 echo_warn "Installing Oh My Zsh..."
