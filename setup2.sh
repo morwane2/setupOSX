@@ -8,7 +8,6 @@ function echo_error  { echo -e '\033[1;31mERROR: '"$1"'\033[0m'; }
 
 echo_ok "Starting bootstrapping"
 
-
 # Update homebrew recipes
 brew update
 
@@ -50,7 +49,7 @@ CASKS=(
     )
 
 echo "Installing cask apps..."
-brew install --cask ${CASKS[@]}
+brew install ${CASKS[@]}
 
 echo "Installing appstore apps..."
 mas install 1435957248   # Drafts
