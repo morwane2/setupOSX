@@ -8,9 +8,9 @@ function echo_error  { echo -e '\033[1;31mERROR: '"$1"'\033[0m'; }
 echo_ok "Stage 0 bootstrapping"
 
 echo_warn "Setting ComputerName"
-#sudo scutil --set ComputerName remus
-#sudo scutil --set LocalHostName remus
-#sudo scutil --set HostName remus
+sudo scutil --set ComputerName remus
+sudo scutil --set LocalHostName remus
+sudo scutil --set HostName remus
 
 echo_warn "Creating folder structure..."
 [[ ! -d $HOME/tmp ]] && mkdir $HOME/tmp
